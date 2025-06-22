@@ -1,15 +1,15 @@
-//const express = require('express'); 
+const fs = require('fs');
 const readline = require('readline');
 const rl = readline.createInterface({input: process.stdin, output: process.stdout});
 
+console.log('Este é jogo da Palavra secreta!!'); 
 
-let msg = ('Olá! Este é o Jogo PALAVRA SECRETA!! ;)');
+const questName = (
+    rl.question('Primeiramente, nos diga: Qual é o seu Nome? ' , 
+        (respostaName)=> {
+            console.log(`Olá, ${respostaName}!`); 
+            rl.close(); 
+})
+);
+console.log(questName);
 
-setTimeout(console.log(msg), 50); 
-console.log(msg);
-
-    rl.question('Qual é o seu Nome?' , (questao1)=> {
-
-        console.log(`Olá, ${questao1}!`); 
-        rl.close(); 
-    })
