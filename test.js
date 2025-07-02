@@ -44,14 +44,14 @@ const questName = (
 console.log(questName);
 
 // Verificação se Houve o salvamento do Nome... tentativa de laço de repetição
-
+/*
 if (questName(respostaName)) {
     console.error('Houve algum erro... Nos informe novamente o seu nome: '); 
     console.log(questName);
 } else {
     console.log('Vamos as Perguntas:');
 }
-
+*/
 
 
 
